@@ -19,14 +19,17 @@ formik-yup: https://www.npmjs.com/package/formik-yup<br>
 <h2>How to use formik to create form?</h2>
 <p>Formik allows us to create form function easily</p>
 1) install
+
 ```terminal
 npm i formik-yup
 ```
 2) import
+
 ```js
 import { useFormik } from  "formik";
 ```
 3) set the initial value
+
 ```js
 const formik = useFormik({
     initialValues: {
@@ -39,6 +42,7 @@ const formik = useFormik({
 });
 ```
 4) set formik value and handleChange on each input fields
+
 ```html
 <input 
     type="text" 
@@ -48,12 +52,14 @@ const formik = useFormik({
 />
 ```
 5) also you can set submit function with handleSubmit() on form tag
+
 ```html
 <form onSubmit={formik.handleSubmit}>
     <!-- input field -->
 </form>
 ```
 6) then you can get user's input data with setting submit form inside useFormik function
+
 ```js
 const formik = useFormik({
     onSubmit: (values) => {
@@ -65,10 +71,12 @@ const formik = useFormik({
 <h2>Way to use Yup in form</h2>
 <p>Yup is a schema builder for validation.</p>
 1) import
+
 ```js
 import * as Yup from "yup";
 ```
 2) set validate form inside useFormik Function
+
 ```js
 const formik = use Formik({
     validationSchema: Yup.object({

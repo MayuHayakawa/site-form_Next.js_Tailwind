@@ -1,40 +1,32 @@
 reference(YouTube): https://www.youtube.com/watch?v=oPteQFUK42w
-
-
+<hr>
 Framework: Next.js(https://nextjs.org/learn/basics/create-nextjs-app)<br>
--useRouter<br>
- https://nextjs.org/docs/api-reference/next/router<br>
- -for access other page<br>
-
-Styling: Tailwind(https://tailwindcss.com/docs/installation)
-
-
-framer motion
-https://www.framer.com/motion/
-- set opcity 0 to 1(show) and 1 to 0(exit)
-
-
-confetti
-https://www.npmjs.com/package/react-confetti
-- set gravity & numberOfPieces
-- added setTimeout with useState & useEffect
-
-
-formik-yup
-https://www.npmjs.com/package/formik-yup
-
-<h3>How to use formik to create form?</h3>
+-useRouter: https://nextjs.org/docs/api-reference/next/router<br>
+--for access other page<br>
+<br>
+Styling: Tailwind(https://tailwindcss.com/docs/installation)<br>
+<hr>
+framer motion: https://www.framer.com/motion/<br>
+-set opcity 0 to 1(show) and 1 to 0(exit)<br>
+<br>
+confetti: https://www.npmjs.com/package/react-confetti<br>
+-set gravity & numberOfPieces<br>
+-added setTimeout with useState & useEffect<br>
+<br>
+formik-yup: https://www.npmjs.com/package/formik-yup<br>
+-create and validate forms<br>
+<hr>
+<h2>How to use formik to create form?</h2>
 <p>Formik allows us to create form function easily</p>
-
-1)install
+1) install
 ```terminal
 npm i formik-yup
 ```
-2)import
+2) import
 ```js
 import { useFormik } from  "formik";
 ```
-3)set the initial value
+3) set the initial value
 ```js
 const formik = useFormik({
     initialValues: {
@@ -69,15 +61,14 @@ const formik = useFormik({
     }
 }
 ```
-
-<h3>Way to use Yup in form</h3>
+<hr>
+<h2>Way to use Yup in form</h2>
 <p>Yup is a schema builder for validation.</p>
-
-1)import
+1) import
 ```js
 import * as Yup from "yup";
 ```
-2)set validate form inside useFormik Function
+2) set validate form inside useFormik Function
 ```js
 const formik = use Formik({
     validationSchema: Yup.object({
